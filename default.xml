@@ -22,9 +22,13 @@
   <remote name="them"
 	fetch="http://github.com/TheMuppets"
 	revision="refs/heads/cm-12.1" />
+	
+  <remote name="dt"
+	fetch="http://github.com/DroidThug"
+	revision="cm-12.1" />	
 
   <default remote="phablet"
-           sync-j="6" />
+           sync-j="8" />
 
   <project path="build" name="android_build" groups="pdk,tradefed" remote="ubp" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -46,12 +50,14 @@
 
   <!-- Moto -->
   <project path="device/moto/shamu" name="android_device_moto_shamu"   remote="ubp" />
-  <project path="kernel/moto/shamu" name="android_kernel_moto_shamu"   remote="ubp" />
+  <project path="kernel/moto/shamu" name="android_kernel_moto_shamu!"   remote="ubp" />
   <project path="vendor/moto"   name="proprietary_vendor_motorola" remote="them" />
 
 <!-- DroidThug Presents YU -->
   <project path="device/yu/tomato"       name="android_device_yu_tomato"     remote="cm"  />
   <project path="device/yu/lettuce"       name="android_device_yu_lettuce"     remote="cm"  />
+  <project path="kernel/cyanogen/msm8916"     name="android_kernel_cyanogen_msm8916"     remote="dt"   />   
+  <project path="vendor/yu"             name="proprietary_vendor_yu"         remote="them" />  
 
 <!-- |-|-|-|-|-| -->
 
