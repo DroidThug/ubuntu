@@ -56,7 +56,7 @@
 <!-- DroidThug Presents YU -->
   <project path="device/yu/tomato"       name="android_device_yu_tomato"     remote="cm"  />
   <project path="device/yu/lettuce"       name="android_device_yu_lettuce"     remote="cm"  />
-  <project path="kernel/cyanogen/msm8916"     name="android_kernel_cyanogen_msm8916"     remote="dt"   />   
+  <project path="kernel/cyanogen/msm8916"     name="Trident"     remote="dt"   />   
   <project path="vendor/yu"             name="proprietary_vendor_yu"         remote="them" />  
 
 <!-- |-|-|-|-|-| -->
